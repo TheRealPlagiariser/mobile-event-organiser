@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="80dp"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/textview_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rel_edit"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/diplomata_sc"
+        android:text="Log In"
+        android:textAllCaps="false"
+        android:textColor="#FB8342"
+        android:textSize="46sp"
+        android:textStyle="italic" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel_edit"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <EditText android:id="@+id/input_email_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint=" Email"
+            android:textColor="#22FF00"
+            />
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_password_login"
+            android:layout_below="@+id/input_email_login"
+            android:layout_marginTop="20dp"
+            android:inputType="textPassword"
+            android:hint=" Password"
+            android:textColor="#22FF00"
+            />
+        <CheckBox
+            android:id="@+id/rememberinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/input_password_login"
+            android:text="   Remember me"/>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rememberinfo"
+            android:layout_marginTop="30dp"
+            android:padding="12dp"
+            android:text="Log In"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:background="@drawable/filter"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/rel_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/rel_edit"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview"
+            android:text="No account yet?"
+            android:textSize="16sp"
+            android:textColor="#6D01E0"
+            android:textAllCaps="false"
+            android:layout_marginTop="13dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/create_one"
+            android:text="Create One!"
+            android:background="#00000000"
+            android:textStyle="bold"
+            android:textColor="#FC834B"
+            android:layout_toRightOf="@+id/textview"
+            android:layout_marginLeft="10dp"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            />
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/progressBar_login"
+        android:layout_below="@+id/rel_signin"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="0dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/emgPhoto"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/avatar"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#1DF305"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/emgfName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/emgPhoto"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+            android:text="first name"
+            android:textSize="@dimen/text_title_size"
+            android:textColor="@color/colorText"/>
+
+        <TextView
+            android:id="@+id/emglName"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/emgfName"
+            android:text="last name"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/text_title_size"
+            />
+
+        <TextView
+            android:id="@+id/emgType_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emgfName"
+            android:layout_toRightOf="@+id/emgPhoto"
+            android:layout_marginLeft="25dp"
+            android:text="Type:"
+            android:textSize="15sp"
+            android:textColor="@color/colorText"/>
+        <TextView
+            android:id="@+id/emgType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emgfName"
+            android:layout_toRightOf="@+id/emgType_title"
+            android:layout_marginLeft="29dp"
+            android:text="Type"
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"/>
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrey2"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginTop="5dp"/>
+</LinearLayout>
+

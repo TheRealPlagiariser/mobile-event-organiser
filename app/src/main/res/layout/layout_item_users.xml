@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="0dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imvuserPhoto"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/avatar"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#1DF305"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/txvuserfName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imvuserPhoto"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="25dp"
+            android:text="first name"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_title_size"
+            android:textColor="@color/colorText"/>
+
+        <TextView
+            android:id="@+id/txvuserlName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txvuserfName"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="10dp"
+            android:text="last name"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_title_size"
+            android:textColor="@color/colorText"/>
+        <TextView
+            android:id="@+id/resnumberB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txvuserEmail"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="0"
+            android:textStyle="italic"
+            android:textSize="18sp"
+            android:textColor="@color/colorText"/>
+        <TextView
+            android:id="@+id/txvuserEmailT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txvuserfName"
+            android:layout_toRightOf="@+id/imvuserPhoto"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:text="email:"
+            android:textSize="15sp"
+            android:textColor="@color/colorText"/>
+        <TextView
+            android:id="@+id/txvuserEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txvuserfName"
+            android:layout_toRightOf="@+id/txvuserEmailT"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="8dp"
+            android:text="User email"
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"/>
+        <TextView
+            android:id="@+id/txvuserPhoneT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txvuserEmail"
+            android:layout_toRightOf="@+id/imvuserPhoto"
+            android:layout_marginLeft="10dp"
+            android:text="Phone:"
+            android:textSize="15sp"
+            android:textColor="@color/colorText"/>
+        <TextView
+            android:id="@+id/txvuserPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txvuserEmail"
+            android:layout_toRightOf="@+id/txvuserPhoneT"
+            android:layout_marginLeft="29dp"
+            android:text="User Phone number"
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"/>
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrey2"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginTop="13dp"/>
+</LinearLayout>
+

@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">MyEventMU</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_interview">Interview</string>
+    <string name="action_concert">Concert</string>
+
+    <string name="menu_home">Events</string>
+    <string name="menu_gallery">Profile</string>
+    <string name="menu_slideshow">Taxi and Hospital</string>
+    <string name="menu_tools">My Events</string>
+    <string name="menu_share">Log Out</string>
+    <string name="menu_send">Send</string>
+
+    <string name="press_back_again_to_exit">Press Back again to Exit.</string>
+    <string name="minimum_password">Password too short, enter minimum 6 characters!</string>
+    <string name="auth_failed">Authentication failed, check your email and password or sign up</string>
+    <string name="view_user"><u>Current Members:3</u></string>
+
+    <string-array name="event_type">
+        <item>Interview</item>
+        <item>Concert</item>
+    </string-array>
+
+    <string-array name="event_type_filter">
+        <item>All</item>
+        <item>Interview</item>
+        <item>Concert</item>
+    </string-array>
+
+    <string-array name="emergency_type">
+        <item>Taxi Driver</item>
+        <item>Doctor</item>
+    </string-array>
+    <string-array name="emergency_type_filter">
+        <item>All</item>
+        <item>Taxi Driver</item>
+        <item>Doctor</item>
+    </string-array>
+
+</resources>

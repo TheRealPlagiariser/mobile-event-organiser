@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="0dp">
+
+    <ImageView
+        android:id="@+id/imvEventPhoto"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/events"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/edt_border_color"
+        />
+
+    <TextView
+        android:text="Event Name"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:id="@+id/textViewName"
+        android:layout_toRightOf="@+id/imvEventPhoto"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Start"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:id="@+id/textviewstarttime"
+        android:textSize="16sp"
+        android:layout_toRightOf="@+id/imvEventPhoto"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="End time"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:id="@+id/textviewendtime"
+        android:textSize="16sp"
+        android:layout_below="@+id/textViewName"
+        android:layout_toRightOf="@+id/textviewstarttime"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="Type :"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:id="@+id/textviewlocation"
+        android:layout_toRightOf="@+id/imvEventPhoto"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/textviewstarttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="Type"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:id="@+id/textviewtype"
+        android:layout_below="@+id/textviewstarttime"
+        android:layout_toRightOf="@+id/textviewlocation"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrey2"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginTop="13dp"/>
+
+</LinearLayout>

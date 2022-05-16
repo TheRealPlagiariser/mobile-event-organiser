@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <RelativeLayout
+            android:layout_width="250dp"
+            android:layout_height="250dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/emgProfile_image"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:src="@drawable/avatar"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/colorBlue"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+
+            <Button
+                android:id="@+id/emgImvSelectPhoto"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ic_camera"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="5dp"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="First Name"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorBlue"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/emgFirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/edt_border_color"
+                    android:paddingLeft="10dp"
+                    android:textColorHighlight="#FF0000"
+                    android:layout_marginTop="10dp"
+                    android:hint="First Name"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginLeft="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Last Name"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorBlue"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/emgLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/edt_border_color"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Last Name"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:textColor="@color/colorBlue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/emgPhone"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edt_border_color"
+            android:paddingLeft="10dp"
+            android:inputType="phone"
+            android:hint="Phone Number"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email Address"
+            android:textColor="@color/colorBlue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/emgEmail"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edt_border_color"
+            android:paddingLeft="10dp"
+            android:hint="Email"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Taxi number or Hospital name"
+            android:textColor="@color/colorBlue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/emgTHname"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edt_border_color"
+            android:paddingLeft="10dp"
+            android:hint="Taxi Number(or Hospital Name)"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Type"
+            android:textColor="@color/colorBlue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+        <Spinner
+            android:id="@+id/emgSpinner_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="8dp"
+            android:layout_marginBottom="20dp"
+            />
+
+        <Button
+            android:id="@+id/btnaddTH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/colorBlue"
+            android:background="@drawable/edt_border_color"
+            android:text="Add"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+
+</ScrollView>

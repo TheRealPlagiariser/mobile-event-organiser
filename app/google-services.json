@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1083438658826",
+    "firebase_url": "https://eventapp-1cf7c.firebaseio.com",
+    "project_id": "eventapp-1cf7c",
+    "storage_bucket": "eventapp-1cf7c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1083438658826:android:3603aaa8b9c6fb17f1b6f3",
+        "android_client_info": {
+          "package_name": "com.jointclock.yorkapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1083438658826-eh34s66h6uig6srib5l1qkcnrv0scrsk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwFgWZcopEpw4-bJCEhiLVe9RC_W2Bs80"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1083438658826-eh34s66h6uig6srib5l1qkcnrv0scrsk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

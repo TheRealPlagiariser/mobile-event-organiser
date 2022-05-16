@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="80dp"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    android:background="@drawable/background"
+    tools:context=".SelectActivity">
+
+    <ImageButton
+        android:id="@+id/btn_auth"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_above="@+id/center"
+        android:layout_marginBottom="20dp"
+        android:padding="12dp"
+        android:background="@drawable/app"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+        />
+    <ImageButton
+        android:id="@+id/btn_app"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/center"
+        android:layout_marginTop="20dp"
+        android:padding="12dp"
+        android:background="@drawable/dir"/>
+
+</RelativeLayout>
